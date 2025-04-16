@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   max-width: 1200px;
@@ -46,7 +45,7 @@ main {
 
 @media (min-width: 768px) {
   main {
-    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
   }
 }
 
@@ -178,6 +177,10 @@ button.unregister:hover {
 
 .dark-mode-toggle:hover {
   background-color: #3949ab;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: #555;
 }
 
 .message {
