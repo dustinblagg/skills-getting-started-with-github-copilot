@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   max-width: 1200px;
@@ -46,7 +45,7 @@ main {
 
 @media (min-width: 768px) {
   main {
-    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
   }
 }
 
@@ -147,6 +146,21 @@ button:hover {
   background-color: #3949ab;
 }
 
+button.unregister {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.unregister:hover {
+  background-color: #b71c1c;
+}
+
 .dark-mode-toggle {
   position: absolute;
   top: 20px;
@@ -163,6 +177,10 @@ button:hover {
 
 .dark-mode-toggle:hover {
   background-color: #3949ab;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: #555;
 }
 
 .message {
