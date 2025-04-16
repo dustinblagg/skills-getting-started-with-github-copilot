@@ -161,6 +161,22 @@ button.unregister:hover {
   background-color: #b71c1c;
 }
 
+button.unregister-button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+button.unregister-button:hover {
+  background-color: #b71c1c;
+}
+
 .dark-mode-toggle {
   position: absolute;
   top: 20px;
